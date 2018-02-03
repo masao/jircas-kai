@@ -51,6 +51,8 @@ album_list.each do |category, album|
       flickr_id: photo[0].value,
       title: photo[8].value,
       secret: info["secret"],
+      farm: info["farm"],
+      server: info["server"],
     }
   end
   data = {
